@@ -1,5 +1,6 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
+import {FaLinkedinIn} from 'react-icons/fa';
 
 const Home = () => {
 return(
@@ -7,19 +8,17 @@ return(
   <img className=' w-full h-screen object-cover object-right' src="https://images.unsplash.com/photo-1531218150217-54595bc2b934?auto=format&fit=crop&q=80&w=1228&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
   <div className=' w-full h-screen absolute top-0 left-0 bg-white/50'>
   <div>
-      <h1>Hi I'm Bryce</h1>
+      <h1>Hello. I'm Bryce.</h1>
       <h2> I'm a 
           <TypeAnimation
           sequence={[
             // Same substring at the start will only be typed out once, initially
-            'We produce food for Mice',
+            'programmer.',
             1000, // wait 1s before replacing "Mice" with "Hamsters"
-            'We produce food for Hamsters',
+            'website developer.',
             1000,
-            'We produce food for Guinea Pigs',
+            'React enthusiast.',
             1000,
-            'We produce food for Chinchillas',
-            1000
           ]}
           wrapper="span"
           speed={50}
@@ -28,6 +27,9 @@ return(
         />
 
       </h2>
+      <div>
+        <FaLinkedinIn />
+      </div>
   </div>
   </div>
 </div>
