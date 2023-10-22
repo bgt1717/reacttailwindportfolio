@@ -10,7 +10,8 @@ return(
   <div className=' max-w-[700px] m-auto h-full w-full flex flex-col justify-center log:items-start items-center' >
       {/* Anything above small text 5xl otherwise text 4xl. 100 through 800 larger number is darker font.*/}
       <h1 className='sm:text-5xl text-4xl font-bold text-gray-800'>Hello. I'm Bryce.</h1>
-      <h2> I'm a 
+      {/* Anything above small text 3xl, otherwise 2xl. */}
+      <h2 className='flex sm:text-3xl text-2xl pt-4 text-gray-800 '> I'm a 
           <TypeAnimation
           sequence={[
             // Same substring at the start will only be typed out once, initially
@@ -28,7 +29,8 @@ return(
         />
 
       </h2>
-      <div>
+      <div className='flex justify-between pt-6 max-w-[100px] w-full'>
+        <FaLinkedinIn className='cursor-pointer' size={20}/>
         <FaLinkedinIn className='cursor-pointer' size={20}/>
       </div>
   </div>
