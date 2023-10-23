@@ -9,7 +9,11 @@ import ProjectItemPic4 from '../assets/congressbuild.jpg'
 function Projects() {
   return (
     <>
-      <div id='projects' className='max-w-[1040px] m-auto '>Projects</div>
+      <div id='projects' className='max-w-[1040px] m-auto md:pl-20 p-4 py-16'>
+        <h1 className='text-4xl font-bold text-center text-[#001b5e]'>Projects</h1>
+        <p className='text-center py-8'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quas vel quod. Esse eveniet error exercitationem iste consequatur porro sit dolore possimus odit dolorem, reprehenderit laudantium autem incidunt consequuntur eos?   
+        </p>
+      </div>
     </>
   );
 }
