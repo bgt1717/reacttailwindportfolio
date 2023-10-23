@@ -16,10 +16,10 @@ function Projects() {
       </div>
       {/* anything above small grid cols 2 and gap 12. One column if not small.*/}
       <div className='grid sm:grid-cols-2 gap-12'>
-        <ProjectItem/>
-        <ProjectItem/>
-        <ProjectItem/>
-        <ProjectItem/>
+        <ProjectItem img={ProjectItemPic} title='360 App'/>
+        <ProjectItem img={ProjectItemPic2} title='ATX App'/>
+        <ProjectItem img={ProjectItemPic3} title='Congress App'/>
+        <ProjectItem img={ProjectItemPic4} title='Congress Building App'/>
 
       </div>
     </>
