@@ -14,6 +14,14 @@ function Projects() {
         <p className='text-center py-8'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quas vel quod. Esse eveniet error exercitationem iste consequatur porro sit dolore possimus odit dolorem, reprehenderit laudantium autem incidunt consequuntur eos?   
         </p>
       </div>
+      {/* anything above small grid cols 2 and gap 12. One column if not small.*/}
+      <div className='grid sm:grid-cols-2 gap-12'>
+        <ProjectItem/>
+        <ProjectItem/>
+        <ProjectItem/>
+        <ProjectItem/>
+
+      </div>
     </>
   );
 }
