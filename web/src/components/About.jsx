@@ -1,9 +1,9 @@
 import React from 'react'
-import ProjectItem from './ProjectItem'
-import ProjectItemPic from '../assets/360.jpg'
-import ProjectItemPic2 from '../assets/atx.jpg'
-import ProjectItemPic3 from '../assets/congress.jpg'
-import ProjectItemPic4 from '../assets/congressbuild.jpg'
+// import ProjectItem from './ProjectItem'
+// import ProjectItemPic from '../assets/360.jpg'
+// import ProjectItemPic2 from '../assets/atx.jpg'
+// import ProjectItemPic3 from '../assets/congress.jpg'
+// import ProjectItemPic4 from '../assets/congressbuild.jpg'
 
 
 function About() {
@@ -15,13 +15,13 @@ function About() {
         </p>
       </div>
       {/* anything above small grid cols 2 and gap 12. One column if not small.*/}
-      <div className='grid sm:grid-cols-2 gap-12'>
+      {/* <div className='grid sm:grid-cols-2 gap-12'>
         <ProjectItem img={ProjectItemPic} title='360 App'/>
         <ProjectItem img={ProjectItemPic2} title='ATX App'/>
         <ProjectItem img={ProjectItemPic3} title='Congress App'/>
         <ProjectItem img={ProjectItemPic4} title='Congress Building App'/>
 
-      </div>
+      </div> */}
     </>
   );
 }
