@@ -1,6 +1,7 @@
 import Home from './components/Home';
+import Projects from './components/Projects';
 import SideBar from './components/SideBar';
-import {AiOutlineMenu} from 'react-icons/ai';
+
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
       <div>
         <SideBar/>
         <Home/>
+        <Projects/>
       </div>
   )
 }
