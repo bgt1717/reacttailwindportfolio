@@ -16,7 +16,7 @@ function About() {
         <li>Programming Languages: Java, Python, C++, JavaScript</li>
         <li>Web Development: HTML/CSS, Node.js, MERN stack</li>
         <li>Databases: MongoDB</li>
-        <li>Other: Microsoft Office, MATLAB, Postman API</li>
+        <li>Other: Microsoft Office, MATLAB, Postman API, TailWind</li>
       </ul>
     </div>
   );
