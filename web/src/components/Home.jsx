@@ -1,6 +1,7 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import {FaLinkedinIn} from 'react-icons/fa';
+import { AiFillGithub } from "react-icons/ai";
 
 const Home = () => {
 return(
@@ -31,8 +32,12 @@ return(
 
       </h2>
       <div className='flex justify-between pt-6 max-w-[100px] w-full'>
-        <FaLinkedinIn className='cursor-pointer' size={20}/>
-        <FaLinkedinIn className='cursor-pointer' size={20}/>
+        <a href="https://www.linkedin.com/in/bryce-townsend-426289237/" target="_blank" rel="noopener noreferrer">
+          <FaLinkedinIn className='cursor-pointer' size={20} />
+        </a>
+        <a href="https://github.com/bgt1717" target="_blank" rel="noopener noreferrer">
+          <AiFillGithub className='cursor-pointer' size={20} />
+        </a>
       </div>
   </div>
   </div>
