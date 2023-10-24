@@ -11,7 +11,7 @@ function About() {
       
       <img className='w-1/2 h-1/2 mx-auto rounded-lg border border-solid border-gray-400' src={mepic} alt='360 App' title='360 App' />
 
-      <h1 className='font-bold text-center text-2xl text-[#001b5e]'>Skills</h1>
+      <h1 className='font-bold text-center text-2xl text-[#001b5e] pt-8'>Skills</h1>
       <ul className='text-center text-2xl py-2'>
         <li>Programming Languages: Java, Python, C++, JavaScript</li>
         <li>Web Development: HTML/CSS, Node.js, MERN stack</li>
