@@ -7,7 +7,7 @@ import ProjectItemPic4 from '../assets/congressbuild.jpg';
 
 function Projects() {
   return (
-    <>
+    <div className="bg-blue-200">
       <div id='Projects' className='max-w-[1040px] m-auto md:pl-20 p-4 py-4 pb-10'>
         <h1 className='text-4xl font-bold text-center text-[#001b5e]'>Projects</h1>
         {/* <p className='text-center text-2xl py-8'>
@@ -21,7 +21,7 @@ function Projects() {
         <ProjectItem img={ProjectItemPic3} title='Congress App' />
         <ProjectItem img={ProjectItemPic4} title='Congress Building App' />
       </div>
-    </>
+    </div>
   );
 }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Contact = () => (
-  <>
+  <div className="bg-blue-200">
     <div id='Contact' className='max-w-[1040px] m-auto md:pl-20 p-4 py-20' >
         <h1 className='py-4 text-4xl font-bold text-center text-[#001b5e]'>Contact</h1>
         <form action="https://getform.io/f/6c663468-a746-4d6e-a3f9-524acbe62774"
@@ -35,7 +35,7 @@ const Contact = () => (
             </button>
         </form>
     </div>
-  </>
+  </div>
 );
 
 export default Contact;
