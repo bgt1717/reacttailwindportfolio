@@ -8,11 +8,11 @@ import ProjectItemPic4 from '../assets/congressbuild.jpg';
 function Projects() {
   return (
     <>
-      <div id='Projects' className='max-w-[1040px] m-auto md:pl-20 p-4 py-4'>
+      <div id='Projects' className='max-w-[1040px] m-auto md:pl-20 p-4 py-4 pb-10'>
         <h1 className='text-4xl font-bold text-center text-[#001b5e]'>Projects</h1>
-        <p className='text-center text-2xl py-8'>
+        {/* <p className='text-center text-2xl py-8'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quas vel quod. Esse eveniet error exercitationem iste consequatur porro sit dolore possimus odit dolorem, reprehenderit laudantium autem incidunt consequuntur eos?
-        </p>
+        </p> */}
       </div>
       {/* Create a grid with two rows and two columns */}
       <div className='grid grid-cols-2 gap-4'>
