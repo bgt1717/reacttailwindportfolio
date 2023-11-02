@@ -11,6 +11,11 @@ import netlify from '../assets/netlify.png';
 import github from '../assets/github.png';
 import git from '../assets/git.png';
 import mongoDB from '../assets/mongoDB.png';
+import express from '../assets/express.png';
+import mysql from '../assets/mysql.png';
+import rest from '../assets/rest.png';
+
+
 
 function About() {
   const listItemStyle = {
@@ -35,12 +40,15 @@ function About() {
     { name: 'React', image: react },
     { name: 'Node', image: node },
     { name: 'MongoDB', image: mongoDB },
-    { name: 'Node', image: node },
     { name: 'Postman', image: postman },
     { name: 'GitHub', image: github },
     { name: 'Git', image: git },
     { name: 'Netlify', image: netlify },
     { name: 'Vite', image: vite },
+    { name: 'Express', image: express },
+    { name: 'mysql', image: mysql },
+    { name: 'rest', image: rest },
+
   ];
 
   return (
@@ -53,12 +61,12 @@ function About() {
 
         <img className='w-1/2 h-1/2 mx-auto rounded-lg border border-solid border-gray-400' src={mepic} alt='Your Name' title='Your Name' />
 
-        <h1 className='font-bold text-center text-2xl text-[#001b5e] pt-8'>Skills</h1>
+        <h1 className='font-bold text-center text-4xl text-[#001b5e] pt-8 pb-4'>Skills</h1>
 
         <ul className='text-center text-2xl py-2 flex flex-wrap justify-center'>
           {skillsData.map((skill, index) => (
             <div key={index}>
-              <li className='flex items-center mr-4'>
+              <li className='flex items-center mr-2'>
                 <div style={listItemStyle}>
                   <img className="" src={skill.image} alt={skill.name} />
                 </div>
