@@ -1,9 +1,17 @@
 import React from 'react';
 import htmlpic from '../assets/html.png';
 import mepic from '../assets/me.jpg';
+
 import js from '../assets/js.png';
 import node from '../assets/node.png';
-import tw from '../assets/tw.png'
+import tw from '../assets/tw.png';
+import react from '../assets/react.png';
+import postman from '../assets/postman.png';
+import vite from '../assets/vite.png';
+import netlify from '../assets/netlify.png';
+import github from '../assets/github.png';
+import git from '../assets/git.png';
+
 
 function About() {
   return (
@@ -19,23 +27,46 @@ function About() {
         <h1 className='font-bold text-center text-2xl text-[#001b5e] pt-8'>Skills</h1>
 
         <ul className='text-center text-2xl py-2 flex flex-wrap justify-center'>
+        <div> Frontend
           <li className='flex items-center mr-4'>
-            <img className="" src={htmlpic} alt='HTML' />
+              
+            <img className="" src={htmlpic} alt='HTML'/>
           </li>
           <li className='flex items-center mr-4'>
             <img className="" src={js} alt='JavaScript' />
           </li>
           <li className='flex items-center mr-4'>
+            <img className="" src={tw} alt='TailWind' />
+          </li>
+          <li className='flex items-center mr-4'>
+            <img className="" src={react} alt='React' />
+          </li>
+          </div>
+          <div> Backend
+          <li className='flex items-center mr-4'>
+            <img className="" src={node} alt='Node' />
+          </li>
+          </div>
+          <div> Other
+          <li className='flex items-center mr-4'>
             <img className="" src={node} alt='Node' />
           </li>
           <li className='flex items-center mr-4'>
-            <img className="" src={tw} alt='TailWind' />
+            <img className="" src={postman} alt='Postman' />
           </li>
-
-          <li>Programming Languages: Java, Python, C++, JavaScript</li>
-          <li>Web Development: HTML/CSS, Node.js, MERN stack</li>
-          <li>Databases: MongoDB</li>
-          <li>Other: Microsoft Office, MATLAB, Postman API, TailWind</li>
+          <li className='flex items-center mr-4'>
+            <img className="" src={github} alt='github' />
+          </li>
+          <li className='flex items-center mr-4'>
+            <img className="" src={git} alt='git' />
+          </li>
+          <li className='flex items-center mr-4'>
+            <img className="" src={netlify} alt='netlify' />
+          </li>
+          <li className='flex items-center mr-4'>
+            <img className="" src={vite} alt='vite' />
+          </li>
+          </div>
         </ul>
 
       </div>
