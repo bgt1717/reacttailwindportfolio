@@ -15,8 +15,6 @@ import express from '../assets/express.png';
 import mysql from '../assets/mysql.png';
 import rest from '../assets/rest.png';
 
-
-
 function About() {
   const listItemStyle = {
     width: '120px', // Adjust the size as needed
@@ -34,22 +32,47 @@ function About() {
   };
 
   const skillsData = [
-    { name: 'HTML', image: htmlpic },
-    { name: 'JavaScript', image: js },
-    { name: 'TailWind', image: tw },
-    { name: 'React', image: react },
-    { name: 'Node', image: node },
-    { name: 'MongoDB', image: mongoDB },
-    { name: 'Postman', image: postman },
-    { name: 'GitHub', image: github },
-    { name: 'Git', image: git },
-    { name: 'Netlify', image: netlify },
-    { name: 'Vite', image: vite },
-    { name: 'Express', image: express },
-    { name: 'mysql', image: mysql },
-    { name: 'rest', image: rest },
-
+    { name: 'HTML', image: htmlpic, category: 'Frontend' },
+    { name: 'JavaScript', image: js, category: 'Frontend' },
+    { name: 'TailWind', image: tw, category: 'Frontend' },
+    { name: 'React', image: react, category: 'Frontend' },
+    { name: 'Node', image: node, category: 'Backend' },
+    { name: 'MongoDB', image: mongoDB, category: 'Backend' },
+    { name: 'Postman', image: postman, category: 'Other' },
+    { name: 'GitHub', image: github, category: 'Other' },
+    { name: 'Git', image: git, category: 'Other' },
+    { name: 'Netlify', image: netlify, category: 'Other' },
+    { name: 'Vite', image: vite, category: 'Other' },
+    { name: 'Express', image: express, category: 'Backend' },
+    { name: 'mysql', image: mysql, category: 'Backend' },
+    { name: 'REST', image: rest, category: 'Backend' },
   ];
+
+  // Function to render a grid of icons for a specific category
+  const renderCategoryIcons = (category) => {
+    const categorySkills = skillsData.filter((skill) => skill.category === category);
+    const iconGrid = [];
+    
+    for (let i = 0; i < categorySkills.length; i += 2) {
+      const row = (
+        <div className="flex items-center justify-center">
+          {categorySkills.slice(i, i + 2).map((skill, index) => (
+            <div key={index}>
+              <li className='flex items-center mr-2'>
+                <div style={listItemStyle}>
+                  <img className="" src={skill.image} alt={skill.name} />
+                </div>
+              </li>
+              <div style={listItemTextStyle}>{skill.name}</div>
+            </div>
+          ))}
+        </div>
+      );
+      iconGrid.push(row);
+    }
+
+    return iconGrid;
+  };
 
   return (
     <div className="bg-blue-200">
@@ -64,16 +87,20 @@ function About() {
         <h1 className='font-bold text-center text-4xl text-[#001b5e] pt-8 pb-4'>Skills</h1>
 
         <ul className='text-center text-2xl py-2 flex flex-wrap justify-center'>
-          {skillsData.map((skill, index) => (
-            <div key={index}>
-              <li className='flex items-center mr-2'>
-                <div style={listItemStyle}>
-                  <img className="" src={skill.image} alt={skill.name} />
-                </div>
-              </li>
-              <div style={listItemTextStyle}>{skill.name}</div>
-            </div>
-          ))}
+          <div className='w-1/3'>
+            <h2 className='text-2xl font-bold text-[#001b5e] mb-2'>Frontend</h2>
+            {renderCategoryIcons('Frontend')}
+          </div>
+
+          <div className='w-1/3'>
+            <h2 className='text-2xl font-bold text-[#001b5e] mb-2'>Backend</h2>
+            {renderCategoryIcons('Backend')}
+          </div>
+
+          <div className='w-1/3'>
+            <h2 className='text-2xl font-bold text-[#001b5e] mb-2'>Other</h2>
+            {renderCategoryIcons('Other')}
+          </div>
         </ul>
       </div>
     </div>
@@ -81,6 +108,8 @@ function About() {
 }
 
 export default About;
+
+
 
 
 
