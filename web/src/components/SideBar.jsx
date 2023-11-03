@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {AiOutlineMenu, AiOutlineHome, AiOutlineProject,AiOutlineMail} from 'react-icons/ai';
+import {AiOutlineMenu, AiOutlineHome, AiOutlineProject,AiOutlineMail,AiOutlineSolution } from 'react-icons/ai';
 import {GrProjects} from 'react-icons/gr'
 
 const SideBar = () => {
@@ -27,6 +27,11 @@ const SideBar = () => {
                             <GrProjects size={20} />
                             <span className='pl-4'>About </span>
                         </a>
+                        <a onClick={handleNav} href="#About" className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 p-4 m-2 cursor-pointer hover:scale-110 ease-in duration-200'
+                        >    
+                            <AiOutlineSolution size={20} />
+                            <span className='pl-4'>Skills </span>
+                        </a>
                         <a onClick={handleNav} href="#Projects" className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 p-4 m-2 cursor-pointer hover:scale-110 ease-in duration-200'
                         >    
                             <AiOutlineProject size={20} />
@@ -49,7 +54,7 @@ const SideBar = () => {
                             <AiOutlineHome  size={30}/>
                         </a>
                         <a href='#About' className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
-                            <GrProjects  size={30}/>
+                            <AiOutlineSolution  size={30}/>
                         </a>
                         <a href='#Skills' className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
                             <GrProjects  size={30}/>
