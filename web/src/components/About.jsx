@@ -83,7 +83,7 @@ return (
       <p className="text-center text-2xl py-4 md:py-8">
         Results-driven computer science graduate with a strong foundation in Front and Back-End development, seeking an entry-level position to contribute to the development and enhancement of innovative web applications and other areas of the tech industry.
       </p>
-
+      <img className="w-1/2 h-1/2 mx-auto rounded-lg border border-solid border-gray-400" src={mepic} alt="Your Name" title="Your Name" />
 
       <h1 id="Skills" className="font-bold text-center text-4xl text-[#001b5e] pt-8 pb-4">Skills</h1>
 

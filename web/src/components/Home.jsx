@@ -10,7 +10,7 @@ const Home = () => {
     <div id='Home' className="flex">
       <img className='w-full h-screen object-cover object-right' src={atx} alt="picture of city" />
       <div className='w-full h-screen absolute top-0 left-0 bg-white/50 flex'>
-        <div className='max-w-[700px] m-auto h-full w-full flex flex-col justify-center items-start'>
+        <div className='w-1/4 m-auto h-full w-full flex flex-col justify-center items-start'>
           <div className="bg-white p-10 rounded-xl">
             <h1 className='sm:text-5xl text-4xl font-bold text-gray-800'>Hello. I'm Bryce.</h1>
             <h2 className='flex sm:text-3xl text-2xl pt-4 text-gray-800 '>I'm a
@@ -41,7 +41,6 @@ const Home = () => {
 
           </div>
         </div>
-        <img src={mepic} alt="Your Picture" className="w-32px h-32px mb-20 mt-20 mx-auto rounded-lg border-2 border-black" />
       </div>
     </div>
   );
