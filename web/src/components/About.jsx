@@ -74,37 +74,40 @@ function About() {
     return iconGrid;
   };
 
-  return (
-    <div className="bg-blue-200">
-      <div id='About' className='max-w-[1040px] m-auto md:pl-20 p-4 py-16 bg-blue-100 rounded-lg'>
-        <h1 className='text-4xl font-bold text-center text-[#001b5e]'>About</h1>
-        <p className='text-center text-2xl py-8'>
-          Results-driven computer science graduate with a strong foundation in Front and Back-End development, seeking an entry-level position to contribute to the development and enhancement of innovative web applications and other areas of the tech industry.
-        </p>
+// ...
 
-        <img className='w-1/2 h-1/2 mx-auto rounded-lg border border-solid border-gray-400' src={mepic} alt='Your Name' title='Your Name' />
+return (
+  <div className="bg-blue-200">
+    <div id="About" className="max-w-[1040px] m-auto md:pl-20 p-4 py-8 md:py-16 bg-blue-100 rounded-lg">
+      <h1 className="text-4xl font-bold text-center text-[#001b5e]">About</h1>
+      <p className="text-center text-2xl py-4 md:py-8">
+        Results-driven computer science graduate with a strong foundation in Front and Back-End development, seeking an entry-level position to contribute to the development and enhancement of innovative web applications and other areas of the tech industry.
+      </p>
 
-        <h1 className='font-bold text-center text-4xl text-[#001b5e] pt-8 pb-4'>Skills</h1>
+      <img className="w-1/2 h-1/2 mx-auto rounded-lg border border-solid border-gray-400" src={mepic} alt="Your Name" title="Your Name" />
 
-        <ul className='text-center text-2xl py-2 flex flex-wrap justify-center'>
-          <div className='w-1/3'>
-            <h2 className='text-2xl font-bold text-[#001b5e] mb-2'>Frontend</h2>
-            {renderCategoryIcons('Frontend')}
-          </div>
+      <h1 className="font-bold text-center text-4xl text-[#001b5e] pt-8 pb-4">Skills</h1>
 
-          <div className='w-1/3'>
-            <h2 className='text-2xl font-bold text-[#001b5e] mb-2'>Backend</h2>
-            {renderCategoryIcons('Backend')}
-          </div>
+      <ul className="text-center text-2xl py-2 md:py-4 flex flex-wrap justify-center">
+        <div className="w-full sm:w-1/2 md:w-1/3">
+          <h2 className="text-2xl font-bold text-[#001b5e] mb-2">Frontend</h2>
+          {renderCategoryIcons('Frontend')}
+        </div>
 
-          <div className='w-1/3'>
-            <h2 className='text-2xl font-bold text-[#001b5e] mb-2'>Other</h2>
-            {renderCategoryIcons('Other')}
-          </div>
-        </ul>
-      </div>
+        <div className="w-full sm:w-1/2 md:w-1/3">
+          <h2 className="text-2xl font-bold text-[#001b5e] mb-2">Backend</h2>
+          {renderCategoryIcons('Backend')}
+        </div>
+
+        <div className="w-full sm:w-1/2 md:w-1/3">
+          <h2 className="text-2xl font-bold text-[#001b5e] mb-2">Other</h2>
+          {renderCategoryIcons('Other')}
+        </div>
+      </ul>
     </div>
-  );
+  </div>
+);
+
 }
 
 export default About;
