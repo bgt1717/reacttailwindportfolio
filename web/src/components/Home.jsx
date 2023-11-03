@@ -3,7 +3,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { AiFillGithub } from "react-icons/ai";
 import atx from '../assets/atx.jpg';
-import mepic from '../assets/me.jpg';
+// import mepic from '../assets/me.jpg';
 
 const Home = () => {
   return (
