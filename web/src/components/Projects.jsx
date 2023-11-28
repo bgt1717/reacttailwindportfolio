@@ -16,10 +16,10 @@ function Projects() {
       </div>
       {/* Create a grid with two rows and two columns */}
       <div className='grid grid-cols-2 gap-4'>
-        <ProjectItem img={ProjectItemPic} title='360 App' />
-        <ProjectItem img={ProjectItemPic} title='ATX App' />
-        <ProjectItem img={ProjectItemPic} title='Congress App' />
-        <ProjectItem img={ProjectItemPic} title='Congress Building App' />
+        <ProjectItem img={ProjectItemPic} title='Project 1' />
+        <ProjectItem img={ProjectItemPic} title='Project 2' />
+        <ProjectItem img={ProjectItemPic} title='Project 3' />
+        <ProjectItem img={ProjectItemPic} title='Project 4' />
       </div>
     </div>
   );
