@@ -15,12 +15,11 @@ function Projects() {
         </p> */}
       </div>
       {/* Create a grid with two rows and two columns */}
-      <div className='grid grid-cols-2 gap-4 p-12'>
+      <div className='grid grid-cols-1 gap-4 lg:px-60 md:px-40 sm:px-32'>
         <ProjectItem img={ProjectItemPic} title='Project 1' />
         <span>dsadsdsa</span>
-        <span>dsadsdsa</span>
         <ProjectItem img={ProjectItemPic} title='Project 2' />
-       
+        <span>dsadsdsa</span>
         <ProjectItem img={ProjectItemPic} title='Project 3' />
         <span>dsadsdsa</span>
 
