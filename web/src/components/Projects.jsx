@@ -10,23 +10,16 @@ function Projects() {
     <div className="bg-blue-200">
       <div id='Projects' className='max-w-[1040px] m-auto md:pl-10 p-4 py-4 pb-10'>
         <h1 className='text-4xl font-bold text-center text-[#001b5e]'>Projects</h1>
-        {/* <p className='text-center text-2xl py-8'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quas vel quod. Esse eveniet error exercitationem iste consequatur porro sit dolore possimus odit dolorem, reprehenderit laudantium autem incidunt consequuntur eos?
-        </p> */}
       </div>
-      {/* Create a grid with two rows and two columns */}
       <div className='grid grid-cols-1 gap-4 lg:px-60 md:px-40 sm:px-32'>
-        <ProjectItem img={ProjectItemPic} title='Project 1' />
-        <span>dsadsdsa</span>
-        <ProjectItem img={ProjectItemPic} title='Project 2' />
-        <span>dsadsdsa</span>
-        <ProjectItem img={ProjectItemPic} title='Project 3' />
-        <span>dsadsdsa</span>
-
+        <ProjectItem img={ProjectItemPic} title='Mern Blog' githubUrl='https://github.com/bgt1717/MERNBLOG3' websiteDemo='https://github.com/bgt1717/Practice_LeetCode'/>
+        <ProjectItem img={ProjectItemPic2} title='Mern Blog' githubUrl='https://github.com/bgt1717/MERNBLOG3' />
+        <ProjectItem img={ProjectItemPic3} title='Recipe Application' githubUrl='https://github.com/bgt1717/recipeapp' />
+        <ProjectItem img={ProjectItemPic} title='LeetCode Progression ' githubUrl='https://github.com/bgt1717/Practice_LeetCode' />
+        {/* Add more ProjectItem components as needed */}
       </div>
     </div>
   );
 }
 
 export default Projects;
-
