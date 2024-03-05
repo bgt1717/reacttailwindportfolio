@@ -13,7 +13,7 @@ function Projects() {
       </div>
       <div className='grid grid-cols-1 gap-4 lg:px-60 md:px-40 sm:px-32'>
         <ProjectItem img={ProjectItemPic} title='Mern Blog' githubUrl='https://github.com/bgt1717/MERNBLOG3' websiteDemo='https://github.com/bgt1717/Practice_LeetCode'/>
-        <ProjectItem img={ProjectItemPic2} title='Mern Blog' githubUrl='https://github.com/bgt1717/MERNBLOG3' />
+        <ProjectItem img={ProjectItemPic2} title='Notes Application' githubUrl='https://github.com/bgt1717/MERNBLOG3' websiteDemo='https://mynotesapplication1.netlify.app/'/>
         <ProjectItem img={ProjectItemPic3} title='Recipe Application' githubUrl='https://github.com/bgt1717/recipeapp' />
         <ProjectItem img={ProjectItemPic} title='LeetCode Progression ' githubUrl='https://github.com/bgt1717/Practice_LeetCode' />
         {/* Add more ProjectItem components as needed */}
