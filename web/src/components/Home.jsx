@@ -7,7 +7,7 @@ import atx from '../assets/atx.jpg';
 const Home = () => {
   return (
     <div id='Home' className="flex items-center justify-center">
-      <img className='w-full h-screen object-cover object-right' src={atx} alt="picture of city" />
+      <img className='w-full h-screen object-cover object-right' src={atx} />
       <div className='w-full h-screen absolute top-0 left-0 bg-white/50 flex items-center justify-center'>
         <div className='w-1/2 bg-white p-8 rounded-xl flex flex-col items-center'>
           <h1 className='sm:text-5xl text-4xl font-bold text-gray-800 text-center'>Hello. I'm Bryce.</h1>
