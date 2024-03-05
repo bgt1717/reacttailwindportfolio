@@ -3,6 +3,7 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
+    'node_modules/flowbite-react/lib/esm/**/*.js',
   ],
   theme: {
     screens: {
@@ -16,5 +17,5 @@ export default {
       // => @media (min-width: 1440px) { ... }
     },
   },
-  plugins: [],
+  plugins: [require('flowbite/plugin')],
 }
