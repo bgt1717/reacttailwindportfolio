@@ -10,17 +10,17 @@ const Home = () => {
     <div id="Home" className="flex items-center justify-center">
       <img className="w-full h-screen object-cover object-right" src={atx} />
       <div className="w-full h-screen absolute top-0 left-0 bg-white/50 flex items-center justify-center">
-        <div className="w-1/2 bg-white p-8 rounded-xl flex flex-col items-center">
-          <h1 className="sm:text-5xl text-4xl font-bold text-gray-800 text-center">
+        <div className="w-3/4 bg-white p-8 rounded-xl flex flex-col items-center">
+          <h1 className="sm:text-4xl text-3xl font-bold text-gray-800 text-center">
             Hello. I'm Bryce.
           </h1>
-          <h2 className="flex sm:text-3xl text-2xl pt-4 text-gray-800 text-center">
+          <h2 className="flex sm:text-3xl text-1xl sm:pt-4 text-gray-800 text-center">
             I'm a
             <TypeAnimation
               sequence={[
                 "programmer.",
                 1000,
-                "website developer.",
+                "developer.",
                 1000,
                 "React enthusiast.",
                 1000,
