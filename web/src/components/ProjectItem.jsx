@@ -8,7 +8,7 @@ const ProjectItem = ({ img, title, githubUrl, websiteDemo }) => (
       className="w-full h-full rounded-xl group-hover:opacity-10"
     />
     <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-      <h3 className="md:text-6xl sm:text-4xl text-3xl pb-2 font-bold text-white tracking-wider text-center">
+      <h3 className="md:text-4xl sm:text-3xl text-3xl pb-2 font-bold text-white tracking-wider text-center">
         {title}
       </h3>
       <div className="flex justify-center pt-2">
