@@ -11,7 +11,7 @@ function Projects() {
       <div id='Projects' className='max-w-[1040px] m-auto md:pl-10 p-4 py-4 pb-10'>
         <h1 className='text-4xl font-bold text-center text-[#001b5e]'>Projects</h1>
       </div>
-      <div className='grid grid cols md:grid-cols-2 gap-4 lg:px-60 md:px-40 sm:px-32'>
+      <div className='grid grid-cols md:grid-cols-2 gap-4 lg:px-60 md:px-40 sm:px-32'>
         <ProjectItem img={ProjectItemPic} title='Mern Blog' githubUrl='https://github.com/bgt1717/MERNBLOG3' websiteDemo='https://github.com/bgt1717/Practice_LeetCode'/>
         <ProjectItem img={ProjectItemPic2} title='Notes Application' githubUrl='https://github.com/bgt1717/notesapp' websiteDemo='https://mynotesapplication1.netlify.app/'/>
         <ProjectItem img={ProjectItemPic3} title='Recipe Application' githubUrl='https://github.com/bgt1717/recipeapp' />
