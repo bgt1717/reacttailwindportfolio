@@ -78,11 +78,12 @@ function About() {
 // ...
 
 return (
-  <div className="bg-blue-200">
+  <div className="bg-gradient-to-r from-indigo-300 ...">
     <div id="About" className="max-w-[1040px] m-auto md:pl-20 p-4 py-8 md:py-8 ">
       <h1 className="text-4xl font-bold text-center text-[#001b5e]">About</h1>
-      <p className="text-center text-2xl py-4 md:py-8">
-        Results-driven computer science graduate with a strong foundation in Front and Back-End development, seeking an entry-level position to contribute to the development and enhancement of innovative web applications and other areas of the tech industry.
+      <p className="text-center text-1xl md:text-2xl py-4 md:py-8">
+        
+     Bachelor of Science in Computer Science graduate from Texas State University, armed with a formidable expertise spanning both Front and Back-End development. My passion lies in sculpting innovative Full Stack web applications that deliver tangible and impactful outcomes.
       </p>
       <img className="w-1/2 h-1/2 mx-auto rounded-lg border border-solid border-gray-400 animate-profile_animate" src={mepic} alt="Me!" title="Me!" />
 

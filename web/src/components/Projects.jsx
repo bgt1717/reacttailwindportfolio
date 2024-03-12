@@ -7,7 +7,7 @@ import ProjectItemPic4 from '../assets/congressbuild.jpg';
 
 function Projects() {
   return (
-    <div className="bg-blue-200">
+    <div className="bg-gradient-to-r from-indigo-300 ...">
       <div id='Projects' className='max-w-[1040px] m-auto md:pl-10 p-4 py-4 pb-10'>
         <h1 className='text-4xl font-bold text-center text-[#001b5e]'>Projects</h1>
       </div>
