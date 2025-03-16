@@ -12,9 +12,9 @@ function Projects() {
         <h1 className='text-4xl font-bold text-center text-[#001b5e]'>Projects</h1>
       </div>
       <div className='grid grid-cols md:grid-cols-2 gap-4 lg:px-60 md:px-40 sm:px-32'>
-        <ProjectItem img={ProjectItemPic} title='Mern Blog' githubUrl='https://github.com/bgt1717/MERNBLOG3' websiteDemo='https://github.com/bgt1717/Practice_LeetCode'/>
+        <ProjectItem img={ProjectItemPic} title='Expense Tracker' githubUrl='https://github.com/bgt1717/GUI-Practice-Python'/>
         <ProjectItem img={ProjectItemPic2} title='Notes Application' githubUrl='https://github.com/bgt1717/notesapp' websiteDemo='https://mynotesapplication1.netlify.app/'/>
-        <ProjectItem img={ProjectItemPic3} title='Recipe Application' githubUrl='https://github.com/bgt1717/recipeapp' />
+        <ProjectItem img={ProjectItemPic3} title='CRUD Project' githubUrl='https://github.com/bgt1717/CRUD_Project_VB' />
         <ProjectItem img={ProjectItemPic} title='LeetCode Progression ' githubUrl='https://github.com/bgt1717/Practice_LeetCode' />
         {/* Add more ProjectItem components as needed */}
       </div>
