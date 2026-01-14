@@ -63,10 +63,7 @@ function About() {
         <h1 className="about-title">About</h1>
 
         <p className="about-description">
-          Bachelor of Science in Computer Science graduate from Texas State University,
-          armed with a formidable expertise spanning both Front and Back-End development.
-          My passion lies in sculpting innovative Full Stack web applications that deliver
-          tangible and impactful outcomes.
+Bachelor of Science in Computer Science graduate from Texas State University with hands-on experience in full-stack development. Skilled in building responsive, scalable web applications across both front-end and back-end technologies, with a strong focus on writing clean, maintainable code that delivers real-world impact.
         </p>
 
         <img

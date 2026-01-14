@@ -27,7 +27,7 @@
 /* Description */
 .about-description {
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 1.0rem;
   padding: 1.5rem 0;
 }
 
@@ -40,7 +40,7 @@
 
 /* Profile image */
 .profile-image {
-  width: 50%;
+  width: 25%;
   height: auto;
   margin: 0 auto;
   display: block;

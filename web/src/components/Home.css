@@ -1,107 +1,72 @@
-/* Fullscreen wrapper */
+/* Full screen professional background */
 .home {
-  position: relative;
+  min-height: 100vh;
+  background: #f8fafc; /* professional neutral */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Background image */
-.home-bg {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-  object-position: right;
-}
-
-/* White translucent overlay */
-.home-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(255, 255, 255, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Center card */
+/* Card */
 .home-card {
-  width: 75%;
   background: white;
-  padding: 2rem;
+  padding: 3rem 2.5rem;
   border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  max-width: 700px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
-/* Headings */
+/* Typography */
 .home-title {
-  font-size: 1.875rem;
-  font-weight: bold;
-  color: #1f2937;
-  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0f172a;
 }
 
 .home-subtitle {
-  display: flex;
-  font-size: 1rem;
-  color: #1f2937;
-  margin-top: 0.5rem;
-  text-align: center;
+  font-size: 1.25rem;
+  margin-top: 0.75rem;
+  color: #334155;
+  justify-content: center;
 }
 
-/* Responsive text */
 @media (min-width: 640px) {
   .home-title {
-    font-size: 2.25rem;
+    font-size: 3rem;
   }
 
   .home-subtitle {
-    font-size: 1.875rem;
-    margin-top: 1rem;
+    font-size: 1.5rem;
   }
 }
 
-/* Resume button (gradient border effect) */
+/* Resume button */
 .resume-btn {
-  margin-top: 1rem;
-  padding: 2px;
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.75rem;
+  background: #001b5e;
+  color: white;
   border-radius: 0.5rem;
-  background: linear-gradient(
-    to bottom right,
-    #fecaca,
-    #fca5a5,
-    #fde68a
-  );
   text-decoration: none;
-  transition: transform 0.15s ease-in-out;
-}
-
-.resume-btn span {
-  display: block;
-  padding: 0.625rem 1.25rem;
-  background: white;
-  border-radius: 0.375rem;
-  font-size: 0.875rem;
   font-weight: 500;
-  color: #111827;
-  transition: background 0.15s ease-in-out;
+  transition: background 0.2s ease;
 }
 
-.resume-btn:hover span {
-  background: transparent;
+.resume-btn:hover {
+  background: #002b8a;
 }
 
 /* Social icons */
 .social-icons {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   display: flex;
-  justify-content: space-between;
-  width: 100px;
+  justify-content: center;
+  gap: 1.25rem;
 }
 
 .social-icons a {
-  cursor: pointer;
-  color: #111827;
+  color: #0f172a;
 }
