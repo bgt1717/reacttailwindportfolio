@@ -1,77 +1,77 @@
-import React, {useState} from 'react';
-import {AiOutlineMenu, AiOutlineHome, AiOutlineProject,AiOutlineMail,AiOutlineSolution } from 'react-icons/ai';
-import {GrProjects} from 'react-icons/gr'
+import React, { useState } from "react";
+import {
+  AiOutlineMenu,
+  AiOutlineHome,
+  AiOutlineProject,
+  AiOutlineMail,
+  AiOutlineSolution,
+} from "react-icons/ai";
+import { GrProjects } from "react-icons/gr";
+import "./SideBar.css";
 
 const SideBar = () => {
-    const [nav, setNav] = useState(false);
-    const handleNav = () => {
-        setNav(!nav);
+  const [nav, setNav] = useState(false);
+  const handleNav = () => setNav(!nav);
 
-    };
-    return ( 
+  return (
+    <>
+      {/* Hamburger Menu (mobile) */}
+      <AiOutlineMenu
+        onClick={handleNav}
+        className="hamburger-icon"
+        size={48}
+      />
 
-        // -----------------HAMBURGER MENU ------------------------------------------ 
-        <div>
-            <AiOutlineMenu 
-            onClick={handleNav }
-            className='absolute top-4 right-4 z-[99] md:hidden text-6xl'
-            />
-            {nav ? (
-                    <div className='fixed w-full h-screen bg-white/90 flex flex-col justify-center items-center z-20'>
-                        <a onClick={handleNav} href="#Home" className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 p-4 m-2 cursor-pointer hover:scale-110 ease-in duration-200'
-                        >    
-                            <AiOutlineHome size={20} />
-                            <span className='pl-4'>Home</span>
-                        </a>
-                        <a onClick={handleNav} href="#About" className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 p-4 m-2 cursor-pointer hover:scale-110 ease-in duration-200'
-                        >    
-                            <GrProjects size={20} />
-                            <span className='pl-4'>About </span>
-                        </a>
-                        <a onClick={handleNav} href="#Skills" className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 p-4 m-2 cursor-pointer hover:scale-110 ease-in duration-200'
-                        >    
-                            <AiOutlineSolution size={20} />
-                            <span className='pl-4'>Skills </span>
-                        </a>
-                        <a onClick={handleNav} href="#Projects" className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 p-4 m-2 cursor-pointer hover:scale-110 ease-in duration-200'
-                        >    
-                            <AiOutlineProject size={20} />
-                            <span className='pl-4'> Projects</span>
-                        </a>
-                        <a onClick={handleNav} href="#Contact" className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 p-4 m-2 cursor-pointer hover:scale-110 ease-in duration-200'
-                        >    
-                            <AiOutlineMail size={20} />
-                            <span className='pl-4'>Contact</span>
-                        </a>
-                    </div>
-                ): (
-                    <div> </div>
-                )}
-                
-                {/* -----------------LEFT MENU ------------------------------------------ */}
-                <div className='md:block hidden fixed top-[5%] z-10'>
-                    <div className='flex flex-col'>
-                        <a href='#Home' className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
-                            <AiOutlineHome  size={30}/>
-                        </a>
-                        <a href='#About' className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
-                            <AiOutlineSolution  size={30}/>
-                        </a>
-                        <a href='#Skills' className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
-                            <GrProjects  size={30}/>
-                        </a>
-                        <a href='#Projects' className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
-                            <AiOutlineProject  size={30}/>
-                        </a>
-                        <a href='#Contact' className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
-                            <AiOutlineMail  size={30}/>
-                        </a>
-                    </div>
-                </div>
+      {/* Mobile Overlay Menu */}
+      {nav && (
+        <div className="mobile-nav">
+          <a onClick={handleNav} href="#Home" className="mobile-link">
+            <AiOutlineHome size={20} />
+            <span>Home</span>
+          </a>
 
+          <a onClick={handleNav} href="#About" className="mobile-link">
+            <GrProjects size={20} />
+            <span>About</span>
+          </a>
 
+          <a onClick={handleNav} href="#Skills" className="mobile-link">
+            <AiOutlineSolution size={20} />
+            <span>Skills</span>
+          </a>
+
+          <a onClick={handleNav} href="#Projects" className="mobile-link">
+            <AiOutlineProject size={20} />
+            <span>Projects</span>
+          </a>
+
+          <a onClick={handleNav} href="#Contact" className="mobile-link">
+            <AiOutlineMail size={20} />
+            <span>Contact</span>
+          </a>
         </div>
-     );
+      )}
+
+      {/* Desktop Sidebar */}
+      <div className="desktop-sidebar">
+        <a href="#Home" className="sidebar-icon">
+          <AiOutlineHome size={30} />
+        </a>
+        <a href="#About" className="sidebar-icon">
+          <AiOutlineSolution size={30} />
+        </a>
+        <a href="#Skills" className="sidebar-icon">
+          <GrProjects size={30} />
+        </a>
+        <a href="#Projects" className="sidebar-icon">
+          <AiOutlineProject size={30} />
+        </a>
+        <a href="#Contact" className="sidebar-icon">
+          <AiOutlineMail size={30} />
+        </a>
+      </div>
+    </>
+  );
 };
- 
+
 export default SideBar;

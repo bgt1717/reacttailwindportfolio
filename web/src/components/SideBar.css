@@ -1,0 +1,83 @@
+/* Hamburger icon */
+.hamburger-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 99;
+  cursor: pointer;
+}
+
+/* Hide hamburger on desktop */
+@media (min-width: 768px) {
+  .hamburger-icon {
+    display: none;
+  }
+}
+
+/* Mobile overlay menu */
+.mobile-nav {
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+}
+
+/* Mobile menu links */
+.mobile-link {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background: #f3f4f6;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 9999px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  text-decoration: none;
+  color: #111827;
+  transition: transform 0.2s ease;
+}
+
+.mobile-link:hover {
+  transform: scale(1.1);
+}
+
+/* Desktop sidebar */
+.desktop-sidebar {
+  position: fixed;
+  top: 5%;
+  left: 0;
+  z-index: 10;
+  display: none;
+}
+
+/* Show sidebar on desktop */
+@media (min-width: 768px) {
+  .desktop-sidebar {
+    display: block;
+  }
+}
+
+/* Sidebar icons */
+.sidebar-icon {
+  display: block;
+  background: #f3f4f6;
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 9999px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  color: #111827;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.sidebar-icon:hover {
+  transform: scale(1.1);
+}

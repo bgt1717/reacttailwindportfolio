@@ -1,0 +1,116 @@
+/* Section background (bg-gradient-to-r from-indigo-300) */
+.about-section {
+  background: linear-gradient(to right, #a5b4fc, #c7d2fe);
+}
+
+/* Container */
+.about-container {
+  max-width: 1040px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+/* Titles */
+.about-title,
+.skills-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  text-align: center;
+  color: #001b5e;
+}
+
+.skills-title {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Description */
+.about-description {
+  text-align: center;
+  font-size: 1.25rem;
+  padding: 1.5rem 0;
+}
+
+@media (min-width: 768px) {
+  .about-description {
+    font-size: 1.5rem;
+    padding: 2rem 0;
+  }
+}
+
+/* Profile image */
+.profile-image {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 0.5rem;
+  border: 1px solid #9ca3af;
+}
+
+/* Skills layout */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.skills-column {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .skills-column {
+    width: 48%;
+  }
+}
+
+@media (min-width: 768px) {
+  .skills-column {
+    width: 30%;
+  }
+}
+
+.skills-column h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #001b5e;
+  margin-bottom: 0.5rem;
+}
+
+/* Skills rows */
+.skills-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+/* Individual skill */
+.skill-item {
+  text-align: center;
+}
+
+/* Circle icon */
+.skill-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #001b5e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-circle img {
+  max-width: 60%;
+  max-height: 60%;
+}
+
+/* Label */
+.skill-label {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}

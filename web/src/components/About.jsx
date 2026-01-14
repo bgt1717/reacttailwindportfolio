@@ -14,24 +14,10 @@ import mongoDB from '../assets/mongoDB.png';
 import express from '../assets/express.png';
 import mysql from '../assets/mysql.png';
 import rest from '../assets/rest.png';
+import './About.css';
 import './animations.css';
 
 function About() {
-  const listItemStyle = {
-    width: '120px', // Adjust the size as needed
-    height: '120px', // Adjust the size as needed
-    borderRadius: '50%',
-    border: '2px solid #001b5e', // Adjust the border color
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-  };
-
-  const listItemTextStyle = {
-    marginTop: '8px',
-  };
-
   const skillsData = [
     { name: 'HTML', image: htmlpic, category: 'Frontend' },
     { name: 'JavaScript', image: js, category: 'Frontend' },
@@ -45,76 +31,71 @@ function About() {
     { name: 'Netlify', image: netlify, category: 'Other' },
     { name: 'Vite', image: vite, category: 'Other' },
     { name: 'Express', image: express, category: 'Backend' },
-    { name: 'mysql', image: mysql, category: 'Backend' },
+    { name: 'MySQL', image: mysql, category: 'Backend' },
     { name: 'REST', image: rest, category: 'Backend' },
   ];
 
-  // Function to render a grid of icons for a specific category
   const renderCategoryIcons = (category) => {
-    const categorySkills = skillsData.filter((skill) => skill.category === category);
-    const iconGrid = [];
-    
+    const categorySkills = skillsData.filter(skill => skill.category === category);
+    const rows = [];
+
     for (let i = 0; i < categorySkills.length; i += 2) {
-      const row = (
-        <div className="flex items-center justify-center">
+      rows.push(
+        <div className="skills-row" key={i}>
           {categorySkills.slice(i, i + 2).map((skill, index) => (
-            <div key={index}>
-              <li className='flex items-center mr-2'>
-                <div style={listItemStyle}>
-                  <img className="" src={skill.image} alt={skill.name} />
-                </div>
-              </li>
-              <div style={listItemTextStyle}>{skill.name}</div>
+            <div className="skill-item" key={index}>
+              <div className="skill-circle">
+                <img src={skill.image} alt={skill.name} />
+              </div>
+              <div className="skill-label">{skill.name}</div>
             </div>
           ))}
         </div>
       );
-      iconGrid.push(row);
     }
 
-    return iconGrid;
+    return rows;
   };
 
-// ...
+  return (
+    <section className="about-section">
+      <div id="About" className="about-container">
+        <h1 className="about-title">About</h1>
 
-return (
-  <div className="bg-gradient-to-r from-indigo-300 ...">
-    <div id="About" className="max-w-[1040px] m-auto md:pl-20 p-4 py-8 md:py-8 ">
-      <h1 className="text-4xl font-bold text-center text-[#001b5e]">About</h1>
-      <p className="text-center text-1xl md:text-2xl py-4 md:py-8">
-        
-     Bachelor of Science in Computer Science graduate from Texas State University, armed with a formidable expertise spanning both Front and Back-End development. My passion lies in sculpting innovative Full Stack web applications that deliver tangible and impactful outcomes.
-      </p>
-      <img className="w-1/2 h-1/2 mx-auto rounded-lg border border-solid border-gray-400 animate-profile_animate" src={mepic} alt="Me!" title="Me!" />
+        <p className="about-description">
+          Bachelor of Science in Computer Science graduate from Texas State University,
+          armed with a formidable expertise spanning both Front and Back-End development.
+          My passion lies in sculpting innovative Full Stack web applications that deliver
+          tangible and impactful outcomes.
+        </p>
 
-      <h1 id="Skills" className="font-bold text-center text-4xl text-[#001b5e] pt-8 pb-4">Skills</h1>
+        <img
+          className="profile-image animate-profile_animate"
+          src={mepic}
+          alt="Me!"
+        />
 
-      <ul className="text-center text-2xl py-2 md:py-4 flex flex-wrap justify-center">
-        <div className="w-full sm:w-1/2 md:w-1/3">
-          <h2 className="text-2xl font-bold text-[#001b5e] mb-2">Frontend</h2>
-          {renderCategoryIcons('Frontend')}
+        <h1 id="Skills" className="skills-title">Skills</h1>
+
+        <div className="skills-grid">
+          <div className="skills-column">
+            <h2>Frontend</h2>
+            {renderCategoryIcons('Frontend')}
+          </div>
+
+          <div className="skills-column">
+            <h2>Backend</h2>
+            {renderCategoryIcons('Backend')}
+          </div>
+
+          <div className="skills-column">
+            <h2>Other</h2>
+            {renderCategoryIcons('Other')}
+          </div>
         </div>
-
-        <div className="w-full sm:w-1/2 md:w-1/3">
-          <h2 className="text-2xl font-bold text-[#001b5e] mb-2">Backend</h2>
-          {renderCategoryIcons('Backend')}
-        </div>
-
-        <div className="w-full sm:w-1/2 md:w-1/3">
-          <h2 className="text-2xl font-bold text-[#001b5e] mb-2">Other</h2>
-          {renderCategoryIcons('Other')}
-        </div>
-      </ul>
-    </div>
-  </div>
-);
-
+      </div>
+    </section>
+  );
 }
 
 export default About;
-
-
-
-
-
-// https://icons8.com/icon/set/javascript-html-css/color--static
