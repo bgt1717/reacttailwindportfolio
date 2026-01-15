@@ -79,3 +79,58 @@ img {
   max-width: 100%;
   display: block;
 }
+
+/* ------------------------
+   Responsive Breakpoints
+------------------------- */
+@media (max-width: 768px) {
+  .section {
+    padding: 3.5rem 1.25rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+/* ------------------------
+   About Layout
+------------------------- */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-grid img {
+    max-width: 220px;
+    margin: 0 auto;
+  }
+}
+
+/* ------------------------
+   Projects Grid
+------------------------- */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* ------------------------
+   Hero Text Scaling
+------------------------- */
+.hero h1 {
+  font-size: clamp(2.2rem, 5vw, 3rem);
+}
+
+.hero h2 {
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+}

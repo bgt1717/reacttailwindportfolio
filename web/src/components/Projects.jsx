@@ -7,13 +7,7 @@ function Projects() {
       <div className="section-inner">
         <h1 className="section-title">Projects</h1>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-            gap: "2rem",
-          }}
-        >
+        <div className="projects-grid">
           <ProjectItem />
           <ProjectItem />
           <ProjectItem />

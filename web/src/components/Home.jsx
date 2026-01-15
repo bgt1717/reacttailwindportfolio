@@ -5,16 +5,14 @@ const Home = () => {
   return (
     <section id="Home" className="hero">
       <div className="section-inner center">
-        <div style={{ textAlign: "center" }}>
-          <h1 style={{ fontSize: "3rem", fontWeight: "700", marginBottom: "1rem" }}>
-            Hello, I’m Bryce.
-          </h1>
+        <div style={{ textAlign: "center", padding: "0 1rem" }}>
+          <h1>Hello, I’m Bryce.</h1>
 
-          <h2 style={{ fontSize: "1.5rem", fontWeight: "500" }}>
+          <h2>
             I’m a{" "}
             <TypeAnimation
               sequence={[
-                "Software Engineer.",
+                "Data analyst.",
                 1500,
                 "Full Stack Developer.",
                 1500,

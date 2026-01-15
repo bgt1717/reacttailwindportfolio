@@ -8,14 +8,7 @@ function About() {
       <div className="section-inner">
         <h1 className="section-title">Professional Summary</h1>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 300px",
-            gap: "3rem",
-            alignItems: "center",
-          }}
-        >
+        <div className="about-grid">
           <p>
             Bachelor of Science in Computer Science graduate from Texas State
             University with hands-on experience in full-stack web development.
@@ -27,10 +20,7 @@ function About() {
           <img
             src={mepic}
             alt="Portrait of Bryce Townsend"
-            style={{
-              borderRadius: "12px",
-              width: "100%",
-            }}
+            className="animate-profile_animate"
           />
         </div>
       </div>
