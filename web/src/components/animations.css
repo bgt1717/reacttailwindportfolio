@@ -11,6 +11,6 @@
   }
   
   .animate-profile_animate {
-    animation: profile_animate 6s ease-in-out infinite 1s;
+    animation: profile_animate 6s ease-in-out infinite 6s;
   }
   

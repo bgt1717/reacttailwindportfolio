@@ -1,49 +1,41 @@
 import React from "react";
-import "./Contact.css";
 
-const Contact = () => (
-  <section className="contact-section">
-    <div id="Contact" className="contact-container">
-      <h1 className="contact-title">Contact</h1>
+const Contact = () => {
+  return (
+    <section id="Contact" className="section">
+      <div className="section-inner">
+        <h1 className="section-title">Contact</h1>
 
-      <form
-        action="https://getform.io/f/6c663468-a746-4d6e-a3f9-524acbe62774"
-        method="POST"
-        encType="multipart/form-data"
-      >
-        <div className="contact-grid">
-          <div className="form-group">
-            <label>Name</label>
-            <input type="text" name="name" />
-          </div>
+        <form
+          style={{
+            maxWidth: "600px",
+            margin: "0 auto",
+            display: "flex",
+            flexDirection: "column",
+            gap: "1rem",
+          }}
+        >
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <textarea rows="6" placeholder="Message" />
 
-          <div className="form-group">
-            <label>Phone</label>
-            <input type="text" name="phone" />
-          </div>
-        </div>
-
-        <div className="form-group">
-          <label>Email</label>
-          <input type="email" name="email" />
-        </div>
-
-        <div className="form-group">
-          <label>Subject</label>
-          <input type="text" name="subject" />
-        </div>
-
-        <div className="form-group">
-          <label>Message</label>
-          <textarea rows="10" name="message"></textarea>
-        </div>
-
-        <button type="submit" className="contact-submit">
-          Send Message
-        </button>
-      </form>
-    </div>
-  </section>
-);
+          <button
+            style={{
+              padding: "0.75rem",
+              backgroundColor: "#001b5e",
+              color: "#fff",
+              border: "none",
+              borderRadius: "6px",
+              cursor: "pointer",
+              fontSize: "1rem",
+            }}
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+  );
+};
 
 export default Contact;

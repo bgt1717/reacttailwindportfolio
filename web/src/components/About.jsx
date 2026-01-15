@@ -1,29 +1,36 @@
 import React from "react";
 import mepic from "../assets/me.jpg";
-import "./About.css";
 import "./animations.css";
 
 function About() {
   return (
-    <section className="about-section">
-      <div id="About" className="about-container">
-        <h1 className="about-title">Professional Summary</h1>
+    <section id="About" className="section">
+      <div className="section-inner">
+        <h1 className="section-title">Professional Summary</h1>
 
-        <div className="about-content">
-          <div className="about-text">
-            <p>
-              Bachelor of Science in Computer Science graduate from Texas State
-              University with hands-on experience in full-stack web development.
-              Proven ability to build responsive, scalable applications across
-              modern front-end and back-end technologies, with an emphasis on
-              clean code, maintainability, and real-world problem solving.
-            </p>
-          </div>
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "1fr 300px",
+            gap: "3rem",
+            alignItems: "center",
+          }}
+        >
+          <p>
+            Bachelor of Science in Computer Science graduate from Texas State
+            University with hands-on experience in full-stack web development.
+            Experienced in building responsive, scalable applications with a
+            strong emphasis on clean architecture, maintainable code, and
+            real-world problem solving.
+          </p>
 
           <img
-            className="profile-image animate-profile_animate"
             src={mepic}
             alt="Portrait of Bryce Townsend"
+            style={{
+              borderRadius: "12px",
+              width: "100%",
+            }}
           />
         </div>
       </div>
