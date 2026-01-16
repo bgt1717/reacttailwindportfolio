@@ -1,114 +1,94 @@
-/* Card container */
+/* ------------------------
+   Card
+------------------------- */
 .project-card {
-  width: 200px;
-  height: 200px;
-  border: 1px solid #0ea5e9;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 1rem;
-  overflow: hidden;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-}
-
-/* Gradient overlay on hover */
-.project-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to right, #e5e7eb, #001b5e);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  z-index: 1;
-}
-
-.project-card:hover::before {
-  opacity: 1;
-}
-
-/* Image */
-.project-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 1rem;
-  transition: opacity 0.3s ease;
-}
-
-.project-card:hover .project-image {
-  opacity: 0.1;
-}
-
-/* Overlay content */
-.project-overlay {
-  position: absolute;
-  inset: 0;
-  z-index: 2;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ------------------------
+   Image
+------------------------- */
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* ------------------------
+   Content
+------------------------- */
+.project-content {
+  padding: 1.5rem;
   text-align: center;
 }
 
-.project-card:hover .project-overlay {
-  opacity: 1;
-}
-
-/* Title */
 .project-title {
-  font-size: 1.875rem;
-  font-weight: bold;
-  padding-bottom: 0.5rem;
-  letter-spacing: 0.05em;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #111827;
 }
 
-@media (min-width: 640px) {
-  .project-title {
-    font-size: 1.75rem;
-  }
+/* ------------------------
+   Tech Stack
+------------------------- */
+.project-stack {
+  font-size: 0.9rem;
+  color: #4b5563;
+  margin-bottom: 1.25rem;
 }
 
-@media (min-width: 768px) {
-  .project-title {
-    font-size: 2.25rem;
-  }
-}
-
-/* Buttons container */
+/* ------------------------
+   Buttons
+------------------------- */
 .project-buttons {
   display: flex;
-  gap: 1rem;
-  padding-top: 0.5rem;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
 }
 
-/* Shared button styles */
 .project-btn {
-  font-size: 0.875rem;
+  padding: 0.45rem 1.2rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
   font-weight: 500;
-  padding: 0.625rem 1.25rem;
-  border-radius: 0.5rem;
-  color: #111827;
-  text-align: center;
-  transition: transform 0.2s ease, background 0.2s ease;
+  text-decoration: none;
+  transition: all 0.2s ease;
 }
 
-/* Individual gradients */
-.demo-btn,
+/* Demo */
+.demo-btn {
+  background-color: #001b5e;
+  color: #ffffff;
+}
+
+.demo-btn:hover {
+  background-color: #0033a0;
+}
+
+/* GitHub */
 .github-btn {
-  background: linear-gradient(to right, #fecaca, #fca5a5, #fde68a);
+  border: 1px solid #001b5e;
+  color: #001b5e;
+  background-color: transparent;
 }
 
-.download-btn {
-  background: linear-gradient(to right, #bbf7d0, #86efac, #fde68a);
+.github-btn:hover {
+  background-color: #001b5e;
+  color: #ffffff;
 }
 
-/* Hover micro-interaction */
-.project-btn:hover {
-  transform: translateY(-2px);
+/* ------------------------
+   Mobile Polish
+------------------------- */
+@media (max-width: 768px) {
+  .project-image {
+    height: 180px;
+  }
 }
