@@ -1,7 +1,7 @@
 import React from "react";
 import "./ProjectItem.css";
 
-const ProjectItem = ({ img, title, stack, githubUrl, websiteDemo }) => {
+const ProjectItem = ({ img, title, stack, bullets, githubUrl, websiteDemo }) => {
   return (
     <div className="project-card">
       <img src={img} alt={`${title} preview`} className="project-image" />
@@ -10,6 +10,14 @@ const ProjectItem = ({ img, title, stack, githubUrl, websiteDemo }) => {
         <h3 className="project-title">{title}</h3>
 
         {stack && <p className="project-stack">{stack}</p>}
+
+        {bullets && (
+          <ul className="project-bullets">
+            {bullets.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        )}
 
         <div className="project-buttons">
           {websiteDemo && (

@@ -24,23 +24,38 @@
 ------------------------- */
 .project-content {
   padding: 1.5rem;
-  text-align: center;
+  text-align: left;
 }
 
 .project-title {
   font-size: 1.3rem;
   font-weight: 600;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
   color: #111827;
 }
 
 /* ------------------------
-   Tech Stack
+   Stack
 ------------------------- */
 .project-stack {
   font-size: 0.9rem;
   color: #4b5563;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+/* ------------------------
+   Bullets
+------------------------- */
+.project-bullets {
+  margin: 0 0 1.25rem 1rem;
+  padding: 0;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.project-bullets li {
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
 }
 
 /* ------------------------
@@ -48,7 +63,6 @@
 ------------------------- */
 .project-buttons {
   display: flex;
-  justify-content: center;
   gap: 0.75rem;
   flex-wrap: wrap;
 }
@@ -85,7 +99,7 @@
 }
 
 /* ------------------------
-   Mobile Polish
+   Mobile
 ------------------------- */
 @media (max-width: 768px) {
   .project-image {
