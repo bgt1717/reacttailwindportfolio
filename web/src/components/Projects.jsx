@@ -2,7 +2,7 @@ import React from "react";
 import ProjectItem from "./ProjectItem";
 import ProjectItemPic from "../assets/gantt.jpg";
 import ProjectItemPic2 from "../assets/bag.avif";
-import ProjectItemPic3 from "../assets/notesapp.jpg";
+import ProjectItemPic3 from "../assets/NotesApp.jpg";
 
 function Projects() {
   return (
