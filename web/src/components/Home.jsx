@@ -1,28 +1,25 @@
 import React from "react";
-import { TypeAnimation } from "react-type-animation";
+import mepic from "../assets/me.jpg";
+import "./Home.css";
 
 const Home = () => {
   return (
     <section id="Home" className="hero">
-      <div className="section-inner center">
-        <div style={{ textAlign: "center", padding: "0 1rem" }}>
-          <h1>Hello, I’m Bryce.</h1>
+      <div className="hero-inner">
+        <img
+          src={mepic}
+          alt="Bryce Townsend"
+          className="hero-image"
+        />
 
-          <h2>
-            I’m a{" "}
-            <TypeAnimation
-              sequence={[
-                "Data analyst.",
-                1500,
-                "Full Stack Developer.",
-                1500,
-                "Problem Solver.",
-                1500,
-              ]}
-              speed={50}
-              repeat={Infinity}
-            />
-          </h2>
+        <div className="hero-text">
+          <h1>Bryce Townsend</h1>
+
+          <p className="hero-summary">
+            Full-stack software developer with a strong foundation in computer
+            science. Focused on building clean, scalable web applications that
+            solve real-world problems.
+          </p>
         </div>
       </div>
     </section>

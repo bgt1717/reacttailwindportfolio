@@ -1,72 +1,58 @@
-/* Full screen professional background */
-.home {
+.hero {
   min-height: 100vh;
-  background: #f8fafc; /* professional neutral */
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #f8f9fb;
+  padding: 2rem 1.5rem;
 }
 
-/* Card */
-.home-card {
-  background: white;
-  padding: 3rem 2.5rem;
-  border-radius: 1rem;
-  max-width: 700px;
-  width: 90%;
-  text-align: center;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-}
-
-/* Typography */
-.home-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #0f172a;
-}
-
-.home-subtitle {
-  font-size: 1.25rem;
-  margin-top: 0.75rem;
-  color: #334155;
-  justify-content: center;
-}
-
-@media (min-width: 640px) {
-  .home-title {
-    font-size: 3rem;
-  }
-
-  .home-subtitle {
-    font-size: 1.5rem;
-  }
-}
-
-/* Resume button */
-.resume-btn {
-  display: inline-block;
-  margin-top: 1.5rem;
-  padding: 0.75rem 1.75rem;
-  background: #001b5e;
-  color: white;
-  border-radius: 0.5rem;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background 0.2s ease;
-}
-
-.resume-btn:hover {
-  background: #002b8a;
-}
-
-/* Social icons */
-.social-icons {
-  margin-top: 1.5rem;
+.hero-inner {
+  max-width: 900px;
   display: flex;
-  justify-content: center;
-  gap: 1.25rem;
+  align-items: center;
+  gap: 3rem;
 }
 
-.social-icons a {
-  color: #0f172a;
+.hero-image {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #001b5e;
+}
+
+.hero-summary {
+  font-size: 1.1rem;
+  color: #374151;
+  line-height: 1.6;
+}
+
+/* ------------------------
+   Mobile Responsive
+------------------------- */
+@media (max-width: 768px) {
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
 }

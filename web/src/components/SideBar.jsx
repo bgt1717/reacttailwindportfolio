@@ -30,11 +30,6 @@ const SideBar = () => {
             <span>Home</span>
           </a>
 
-          <a onClick={handleNav} href="#About" className="mobile-link">
-            <GrProjects size={20} />
-            <span>About</span>
-          </a>
-
           <a onClick={handleNav} href="#Projects" className="mobile-link">
             <AiOutlineProject size={20} />
             <span>Projects</span>
@@ -51,9 +46,6 @@ const SideBar = () => {
       <div className="desktop-sidebar">
         <a href="#Home" className="sidebar-icon">
           <AiOutlineHome size={30} />
-        </a>
-        <a href="#About" className="sidebar-icon">
-          <AiOutlineSolution size={30} />
         </a>
         <a href="#Projects" className="sidebar-icon">
           <AiOutlineProject size={30} />
