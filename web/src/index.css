@@ -23,27 +23,27 @@ body {
    Theme Variables
 ------------------------- */
 :root {
-  --bg-color: #ffffff;
+  --bg-color: #f8f9fb;
   --bg-alt-color: #f8f9fb;
-  --card-bg: #ffffff;
+  --card-bg: #f8f9fb;
 
-  --text-color: #1f2933;
-  --muted-text: #4b5563;
+  --text-color: #31404e;
+  --muted-text: #31404e;
 
   --accent-color: #001b5e;
   --border-color: #e5e7eb;
 }
 
 body.dark {
-  --bg-color: #0f172a;
-  --bg-alt-color: #020617;
-  --card-bg: #020617;
+  --bg-color: #15171c;
+  --bg-alt-color: #15171c;
+  --card-bg: #15171c;
 
   --text-color: #e5e7eb;
-  --muted-text: #9ca3af;
+  --muted-text: #e5e7eb;
 
-  --accent-color: #60a5fa;
-  --border-color: #1e293b;
+  --accent-color: #e5e7eb;
+  --border-color: #ffffff;
 }
 
 /* ------------------------

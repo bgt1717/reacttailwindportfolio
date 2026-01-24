@@ -4,7 +4,6 @@
   align-items: center;
   justify-content: center;
   padding: 3rem 1.5rem;
-  background-color: var(--bg-color);
 }
 
 .home-container {
@@ -35,7 +34,7 @@
 .home-content p {
   font-size: 1.05rem;
   line-height: 1.6;
-  color: #4b5563;
+  color: #494949;
 }
 
 .home-buttons {
@@ -61,8 +60,9 @@
 }
 
 .btn.secondary {
-  background-color: #111827;
+  background-color: #494949;
   color: white;
+  border-color: white;
 }
 
 .btn:hover {
