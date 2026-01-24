@@ -2,10 +2,34 @@
   position: fixed;
   top: 1.25rem;
   right: 1.25rem;
-  background: transparent;
-  border: none;
-  font-size: 1.4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 42px;
+  height: 42px;
+
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+
   cursor: pointer;
   color: var(--text-color);
-  z-index: 100;
+
+  transition: background-color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.theme-toggle:hover {
+  transform: rotate(15deg);
+}
+
+.theme-toggle svg {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+body.dark .theme-toggle svg {
+  transform: rotate(180deg);
 }
