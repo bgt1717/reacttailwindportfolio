@@ -30,7 +30,7 @@ const Home = () => {
             </a>
 
             <a
-              href="https://docs.google.com/document/d/YOUR_RESUME_ID"
+              href="https://drive.google.com/file/d/1rYY3pt9xF1W8wkVrhJiwTJX9ma1c9Mtt/view"
               target="_blank"
               rel="noopener noreferrer"
             >
