@@ -6,14 +6,6 @@
   padding: 3rem 1.5rem;
 }
 
-.home-container {
-  display: flex;
-  gap: 3rem;
-  max-width: 1000px;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 .home-image {
   width: 260px;
   height: 260px;
@@ -71,7 +63,7 @@
 }
 
 /* Mobile */
-@media (max-width: 768px) {
+
   .home-container {
     flex-direction: column;
     text-align: center;
@@ -84,4 +76,4 @@
   .home-buttons {
     justify-content: center;
   }
-}
+
