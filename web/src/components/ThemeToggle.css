@@ -1,7 +1,6 @@
 .theme-toggle {
   position: fixed;
   top: 1.25rem;
-  right: 1.25rem;
 
   display: flex;
   align-items: center;
@@ -16,10 +15,27 @@
 
   cursor: pointer;
   color: var(--text-color);
+  z-index: 100;
 
   transition: background-color 0.3s ease,
     border-color 0.3s ease,
     transform 0.2s ease;
+}
+
+/* Desktop default */
+@media (min-width: 768px) {
+  .theme-toggle {
+    right: 1.25rem;
+    left: auto;
+  }
+}
+
+/* Mobile – move to top-left */
+@media (max-width: 767px) {
+  .theme-toggle {
+    left: 1.25rem;
+    right: auto;
+  }
 }
 
 .theme-toggle:hover {
