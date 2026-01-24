@@ -34,17 +34,23 @@ body {
   --border-color: #e5e7eb;
 }
 
-body.dark {
-  --bg-color: #15171c;
-  --bg-alt-color: #15171c;
-  --card-bg: #15171c;
+[data-theme="dark"] {
+  --bg-color: #0f172a;
+  --bg-alt-color: #020617;
+  --card-bg: #020617;
 
   --text-color: #e5e7eb;
-  --muted-text: #e5e7eb;
+  --muted-text: #94a3b8;
 
-  --accent-color: #e5e7eb;
-  --border-color: #ffffff;
+  --accent-color:#e5e7eb;
+  --border-color: #1e293b;
 }
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
 
 /* ------------------------
    Sections

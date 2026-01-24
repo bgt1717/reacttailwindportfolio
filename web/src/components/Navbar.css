@@ -1,3 +1,7 @@
+/* =========================
+   Navbar Container
+========================= */
+
 .navbar {
   position: sticky;
   top: 0;
@@ -6,6 +10,10 @@
   border-bottom: 1px solid var(--border-color);
   z-index: 100;
 }
+
+/* =========================
+   Inner Layout
+========================= */
 
 .navbar-inner {
   max-width: 1100px;
@@ -16,11 +24,20 @@
   justify-content: space-between;
 }
 
+/* =========================
+   Logo
+========================= */
+
 .navbar-logo {
-  font-weight: 700;
   font-size: 1.1rem;
+  font-weight: 700;
   color: var(--text-color);
+  white-space: nowrap;
 }
+
+/* =========================
+   Desktop Links
+========================= */
 
 .navbar-links {
   display: flex;
@@ -49,16 +66,52 @@
   width: 100%;
 }
 
-/* Mobile Toggle */
-.navbar-toggle {
-  display: none;
-  background: none;
-  border: none;
-  color: var(--text-color);
-  cursor: pointer;
+/* =========================
+   Right Actions (Theme + Menu)
+========================= */
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
-/* Mobile Menu */
+/* Shared icon button */
+.icon-btn {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  color: var(--text-color);
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.icon-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Hover effect */
+.icon-btn:hover {
+  background-color: var(--border-color);
+  transform: translateY(-1px);
+}
+
+/* Hide hamburger on desktop */
+.navbar-toggle {
+  display: none;
+}
+
+/* =========================
+   Mobile Menu
+========================= */
+
 .navbar-mobile {
   display: none;
   flex-direction: column;
@@ -70,22 +123,24 @@
   padding: 1rem 1.5rem;
   color: var(--text-color);
   text-decoration: none;
+  font-weight: 500;
 }
 
 .navbar-mobile a:hover {
   background-color: var(--border-color);
 }
 
-/* -----------------------
+/* =========================
    Responsive
------------------------- */
+========================= */
+
 @media (max-width: 768px) {
   .navbar-links {
     display: none;
   }
 
   .navbar-toggle {
-    display: block;
+    display: flex;
   }
 
   .navbar-mobile {
