@@ -1,0 +1,11 @@
+.theme-toggle {
+  position: fixed;
+  top: 1.25rem;
+  right: 1.25rem;
+  background: transparent;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: var(--text-color);
+  z-index: 100;
+}

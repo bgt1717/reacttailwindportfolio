@@ -3,8 +3,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f8f9fb;
-  padding: 2rem 1.5rem;
+  background-color: var(--bg-alt-color);
+}
+
+.hero-text h1 {
+  color: var(--accent-color);
+}
+
+.hero-summary {
+  color: var(--muted-text);
 }
 
 .hero-inner {

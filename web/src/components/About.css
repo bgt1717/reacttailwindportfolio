@@ -2,6 +2,10 @@
   background: #f8fafc;
 }
 
+.about-grid p {
+  color: var(--muted-text);
+}
+
 .about-title {
   font-size: 2.25rem;
   font-weight: 700;

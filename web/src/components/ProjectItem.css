@@ -2,12 +2,9 @@
    Card
 ------------------------- */
 .project-card {
-  display: flex;
-  flex-direction: column;
-  border-radius: 12px;
-  overflow: hidden;
-  background-color: #ffffff;
+  background-color: var(--card-bg);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  
 }
 
 /* ------------------------
@@ -28,29 +25,21 @@
 }
 
 .project-title {
-  font-size: 1.3rem;
-  font-weight: 600;
-  margin-bottom: 0.4rem;
-  color: #111827;
+ color: var(--text-color);
 }
 
 /* ------------------------
    Stack
 ------------------------- */
 .project-stack {
-  font-size: 0.9rem;
-  color: #4b5563;
-  margin-bottom: 0.75rem;
+ color: var(--muted-text);
 }
 
 /* ------------------------
    Bullets
 ------------------------- */
 .project-bullets {
-  margin: 0 0 1.25rem 1rem;
-  padding: 0;
-  font-size: 0.9rem;
-  color: #374151;
+ color: var(--muted-text);
 }
 
 .project-bullets li {
@@ -78,9 +67,10 @@
 
 /* Demo */
 .demo-btn {
-  background-color: #001b5e;
+  background-color: var(--accent-color);
   color: #ffffff;
 }
+
 
 .demo-btn:hover {
   background-color: #0033a0;
@@ -88,9 +78,8 @@
 
 /* GitHub */
 .github-btn {
-  border: 1px solid #001b5e;
-  color: #001b5e;
-  background-color: transparent;
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
 }
 
 .github-btn:hover {
