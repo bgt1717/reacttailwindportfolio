@@ -2,10 +2,21 @@
    Card
 ------------------------- */
 .project-card {
+  border-radius: 1rem;          /* 👈 1rem radius */
+  overflow: hidden;             /* 👈 clips image to rounded corners */
   background-color: var(--card-bg);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
   
 }
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem; /* 👈 vertical + horizontal spacing */
+  justify-items: center; /* centers cards */
+}
+
 
 /* ------------------------
    Image
@@ -14,8 +25,10 @@
   width: 100%;
   height: 200px;
   object-fit: cover;
-  border-radius: 1rem;
+  display: block;
 }
+
+
 
 /* ------------------------
    Content
@@ -86,13 +99,4 @@
 .github-btn:hover {
   background-color: #001b5e;
   color: #ffffff;
-}
-
-/* ------------------------
-   Mobile
-------------------------- */
-@media (max-width: 768px) {
-  .project-image {
-    height: 180px;
-  }
 }
