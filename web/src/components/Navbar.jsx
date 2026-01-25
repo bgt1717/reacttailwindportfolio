@@ -7,10 +7,9 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [dark, setDark] = useState(false);
 
-  // Load theme ONCE
+  // Load saved theme once
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
-
     if (savedTheme === "dark") {
       document.documentElement.setAttribute("data-theme", "dark");
       setDark(true);
@@ -18,7 +17,7 @@ const Navbar = () => {
   }, []);
 
   const toggleTheme = () => {
-    setDark(prev => {
+    setDark((prev) => {
       const next = !prev;
 
       if (next) {
@@ -36,14 +35,23 @@ const Navbar = () => {
   return (
     <header className="navbar">
       <div className="navbar-inner">
-        <div className="navbar-logo">Bryce Townsend</div>
+        {/* Logo / Name */}
+        <a
+          href="https://brycetownsend.onrender.com/"
+          className="navbar-logo"
+          aria-label="Bryce Townsend Home"
+        >
+          Bryce Townsend
+        </a>
 
+        {/* Desktop Links */}
         <nav className="navbar-links">
           <a href="#Home">Home</a>
           <a href="#Projects">Projects</a>
           <a href="#Contact">Contact</a>
         </nav>
 
+        {/* Actions */}
         <div className="navbar-actions">
           <button
             className="icon-btn theme-toggle"
@@ -63,6 +71,7 @@ const Navbar = () => {
         </div>
       </div>
 
+      {/* Mobile Menu */}
       {open && (
         <div className="navbar-mobile">
           <a onClick={() => setOpen(false)} href="#Home">Home</a>

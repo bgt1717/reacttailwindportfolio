@@ -5,10 +5,31 @@
 .navbar {
   position: sticky;
   top: 0;
-  width: 100%;
+  z-index: 1000;
   background-color: var(--bg-alt-color);
   border-bottom: 1px solid var(--border-color);
-  z-index: 100;
+  
+}
+.navbar a {
+  position: relative;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: var(--accent-color);
+  transition: width 0.25s ease;
+}
+
+.navbar a:hover::after {
+  width: 100%;
 }
 
 /* =========================
@@ -33,6 +54,7 @@
   font-weight: 700;
   color: var(--text-color);
   white-space: nowrap;
+  text-decoration: none;
 }
 
 /* =========================
