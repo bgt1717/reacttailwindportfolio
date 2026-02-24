@@ -39,7 +39,7 @@ function Projects() {
           <ProjectItem
             img={ProjectItemPic3}
             title="Notes Application"
-            stack="JavaScript, Node.js, Express, MySQL"
+            stack="React, Node.js, Express, MongoDB"
             bullets={[
               "Built a CRUD-based notes application with a relational database backend.",
               "Designed REST endpoints to support data persistence and user interactions.",
@@ -50,7 +50,7 @@ function Projects() {
           <ProjectItem
             img={ProjectItemPic4}
             title="Blog Application"
-            stack="JavaScript, Node.js, Express, MySQL"
+            stack="React, Node.js, Express, MongoDB"
             bullets={[
               "Developed a full-stack blog application powered by a relational database backend.",
               "Architected scalable backend services that handle CRUD operations with client–server communication.",
