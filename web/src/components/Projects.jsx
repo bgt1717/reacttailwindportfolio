@@ -27,10 +27,10 @@ function Projects() {
           <ProjectItem
             img={ProjectItemPic2}
             title="Bag E-Commerce Site"
-            stack="React, Node.js, Express, MongoDB"
+            stack="React, Node.js, Express"
             bullets={[
-              "Developed a responsive e-commerce interface.",
-              "Implemented backend services for inventory management and order handling.",
+              "Developed a responsive e-commerce gallery.",
+              "Integrated with Etsy Shop",
             ]}
             githubUrl="https://github.com/bgt1717/BagWebsite2"
             websiteDemo="https://atxbags.onrender.com/"
