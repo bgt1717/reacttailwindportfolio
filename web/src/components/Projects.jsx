@@ -52,8 +52,8 @@ function Projects() {
             title="Blog Application"
             stack="JavaScript, Node.js, Express, MySQL"
             bullets={[
-              "Developed a full-stack blog application powered by a relational database backend to ensure reliable data storage and retrieval.",
-              "Architected scalable backend services that handle CRUD operations and facilitate smooth client–server communication.",
+              "Developed a full-stack blog application powered by a relational database backend.",
+              "Architected scalable backend services that handle CRUD operations with client–server communication.",
             ]}
             githubUrl="https://github.com/bgt1717/MernBlog2"
             websiteDemo="https://townsendblog.onrender.com/"
