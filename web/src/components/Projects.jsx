@@ -49,14 +49,14 @@ function Projects() {
           />
           <ProjectItem
             img={ProjectItemPic4}
-            title="Notes Application"
+            title="Blog Application"
             stack="JavaScript, Node.js, Express, MySQL"
             bullets={[
-              "Built a CRUD-based notes application with a relational database backend.",
-              "Designed REST endpoints to support data persistence and user interactions.",
+              "Developed a full-stack blog application powered by a relational database backend to ensure reliable data storage and retrieval.",
+              "Architected scalable backend services that handle CRUD operations and facilitate smooth client–server communication.",
             ]}
-            githubUrl="https://github.com/bgt1717/CRUD_Project_VB"
-            websiteDemo="https://notesapp-s8ix.onrender.com/"
+            githubUrl="https://github.com/bgt1717/MernBlog2"
+            websiteDemo="https://townsendblog.onrender.com/"
           />
         </div>
       </div>
