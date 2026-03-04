@@ -13,8 +13,30 @@ function Projects() {
 
         <div className="projects-grid">
           <ProjectItem
+            img={ProjectItemPic3}
+            title="Notes Hub"
+            stack="React, Node.js, Express, MongoDB"
+            bullets={[
+              "Built a CRUD-based notes application with a relational database backend.",
+              "Designed REST endpoints to support data persistence and user interactions.",
+            ]}
+            githubUrl="https://github.com/bgt1717/CRUD_Project_VB"
+            websiteDemo="https://notesapp-s8ix.onrender.com/"
+          />
+          <ProjectItem
+            img={ProjectItemPic4}
+            title="Blog Application"
+            stack="React, Node.js, Express, MongoDB"
+            bullets={[
+              "Developed a full-stack blog application powered by a relational database backend.",
+              "Architected scalable backend services that handle CRUD operations with client–server communication.",
+            ]}
+            githubUrl="https://github.com/bgt1717/MernBlog2"
+            websiteDemo="https://townsendblog.onrender.com/"
+          />
+                    <ProjectItem
             img={ProjectItemPic}
-            title="Gantt App"
+            title="Gantt Chart Application"
             stack="React, Node.js, Express, MongoDB"
             bullets={[
               "Designed and implemented a full-stack task management system with user authentication.",
@@ -34,29 +56,6 @@ function Projects() {
             ]}
             githubUrl="https://github.com/bgt1717/BagWebsite2"
             websiteDemo="https://atxbags.onrender.com/"
-          />
-
-          <ProjectItem
-            img={ProjectItemPic3}
-            title="Notes Application"
-            stack="React, Node.js, Express, MongoDB"
-            bullets={[
-              "Built a CRUD-based notes application with a relational database backend.",
-              "Designed REST endpoints to support data persistence and user interactions.",
-            ]}
-            githubUrl="https://github.com/bgt1717/CRUD_Project_VB"
-            websiteDemo="https://notesapp-s8ix.onrender.com/"
-          />
-          <ProjectItem
-            img={ProjectItemPic4}
-            title="Blog Application"
-            stack="React, Node.js, Express, MongoDB"
-            bullets={[
-              "Developed a full-stack blog application powered by a relational database backend.",
-              "Architected scalable backend services that handle CRUD operations with client–server communication.",
-            ]}
-            githubUrl="https://github.com/bgt1717/MernBlog2"
-            websiteDemo="https://townsendblog.onrender.com/"
           />
         </div>
       </div>
