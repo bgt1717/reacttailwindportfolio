@@ -1,9 +1,9 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
 import ProjectItemPic from "../assets/gantt.jpg";
-import ProjectItemPic2 from "../assets/bag.avif";
+import ProjectItemPic2 from "../assets/bag-site.jpg";
 import ProjectItemPic3 from "../assets/NotesApp.jpg";
-import ProjectItemPic4 from "../assets/360.jpg";
+import ProjectItemPic4 from "../assets/Blog.jpg";
 
 function Projects() {
   return (
